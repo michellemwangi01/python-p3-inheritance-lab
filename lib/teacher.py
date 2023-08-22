@@ -16,5 +16,8 @@ class Teacher(User):
     "pytest -x flag to fail fast",
 ]
     def teach(self):
-        random_lesson =  random.randint(0,len(self.knowledge))
-        return self.knowledge[random_lesson]
+        # random_lesson =  random.randint(0,len(self.knowledge))
+        # return self.knowledge[random_lesson]
+        random_lesson = random.choice(self.knowledge)
+        return random_lesson
+
